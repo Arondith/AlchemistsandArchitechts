@@ -17,21 +17,31 @@ html, body{
     height: 100vh;
     width: 100%;
     background-color: #FF3227;
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
-    z-index: 9;
+    z-index: 99;
+}
+#main{
+    position: relative;
+    overflow: hidden;
+    background-color: #FFF9EC;
+}
+#page1{
+    position: relative;
+    min-height: 150vh;
+    width: 100%;
 }
 #navbar{
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding:1.2vw 1vw;
-    z-index: 8;
+    padding: 1.2vw 1vw;
+    z-index: 89;
     background-color: #FFF9EC;
 }
 #navbar h3{
@@ -45,15 +55,6 @@ html, body{
     left: 50%;
     transform: translateX(-50%);
     height: 2vw;
-}
-#main{
-    overflow: hidden;
-    background-color: #FFF9EC;
-}
-#page1{
-    position: relative;
-    min-height: 150vh;
-    width: 100%;
 }
 #head-1{
     position: absolute;
@@ -153,7 +154,7 @@ html, body{
     object-fit: cover;
 }
 #head-2 #left img:nth-child(1){
-    height: 40vw
+    height: 40vw;
 }
 #head-2 .strip div{
     width: 100%;
