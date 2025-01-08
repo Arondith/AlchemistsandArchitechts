@@ -1,0 +1,234 @@
+@font-face {
+    font-family: gilroy;
+    src: url(./Gilroy-Medium.woff);
+}
+/* ===( Creative 💌 : CODE AASHU )=== */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: gilroy;
+}
+html, body{
+    width: 100%;
+    height: 100%;
+}
+#loader{
+    height: 100vh;
+    width: 100%;
+    background-color: #FF3227;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 9;
+}
+#navbar{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:1.2vw 1vw;
+    z-index: 8;
+    background-color: #FFF9EC;
+}
+#navbar h3{
+    color: #FF3227;
+    text-transform: uppercase;
+    font-size: 1vw;
+    font-weight: 600;
+}
+#navbar img{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 2vw;
+}
+#main{
+    overflow: hidden;
+    background-color: #FFF9EC;
+}
+#page1{
+    position: relative;
+    min-height: 150vh;
+    width: 100%;
+}
+#head-1{
+    position: absolute;
+    height: 130vh;
+    width: 100%;
+}
+#head-1 img{
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%,-20%);
+    width: 120%;
+}
+#head-1 h4{
+    position: absolute;
+    font-size: 5.5vw;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-weight: 600;
+    color: #FF3227;
+    z-index: 1;
+}
+#head-1 h4:nth-child(2){
+    top: 60%;
+    left: 25%;
+}
+#head-1 h4:nth-child(3){
+    top: 70%;
+    left: -2%;
+}
+#head-1 h4:nth-child(4){
+    top: 80%;
+    left: 75%;
+}
+#head-1 h4:nth-child(5){
+    top: 90%;
+    left: 45%;
+}
+#head-2{
+    height: 130vh;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    overflow: hidden;
+}
+#center{
+    width: 42%;
+    height: 85%;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%,0%);
+    overflow: hidden;
+    clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0 100%);
+}
+#head-2 #txt-c{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 0;
+    width: 33.5%;
+    height: 14vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#head-2 #txt-c h3{
+    color: #FF3227;
+    font-weight: 600;
+    font-size: 1.1vw;
+}
+#center img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    transform: scale(2);
+    transform-origin: center;
+}
+#head-2 .strip{
+    width: 31.5%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5vw;
+}
+#head-2 #left{
+    transform: translateY(100%);
+}
+#head-2 #right{
+    transform: translateY(-100%);
+}
+#head-2 .strip img{
+    width: 100%;
+    object-fit: cover;
+}
+#head-2 #left img:nth-child(1){
+    height: 40vw
+}
+#head-2 .strip div{
+    width: 100%;
+    height: 16vw;
+}
+/* Locomotive Scroll Styles */
+.locomotive-scroll {
+    overflow: hidden;
+}
+
+[data-scroll-container] {
+    perspective: 1px;
+    transform-style: preserve-3d;
+}
+
+[data-scroll-section] {
+    transform-style: preserve-3d;
+}
+
+/* Animation Classes */
+.fade-in {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: all 1s ease;
+}
+
+.fade-in.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.slide-in-left {
+    opacity: 0;
+    transform: translateX(-100px);
+    transition: all 1s ease;
+}
+
+.slide-in-left.active {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.slide-in-right {
+    opacity: 0;
+    transform: translateX(100px);
+    transition: all 1s ease;
+}
+
+.slide-in-right.active {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.scale-up {
+    opacity: 0;
+    transform: scale(0.8);
+    transition: all 1s ease;
+}
+
+.scale-up.active {
+    opacity: 1;
+    transform: scale(1);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    #navbar img {
+        height: 8vw;
+    }
+    
+    #head-1 img {
+        height: 10vw;
+    }
+    
+    #head-1 h4 {
+        font-size: 2.5vw;
+    }
+}
