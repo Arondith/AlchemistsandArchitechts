@@ -1,6 +1,8 @@
 @font-face {
-    font-family: gilroy;
-    src: url(./Gilroy-Medium.woff);
+    font-family: 'Gilroy';
+    src: url('assets/fonts/Gilroy-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
 }
 :root {
     /* Refined Color Palette */
@@ -25,7 +27,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: gilroy;
+    font-family: 'Gilroy', 'Montserrat', sans-serif;
 }
 html, body{
     width: 100%;
